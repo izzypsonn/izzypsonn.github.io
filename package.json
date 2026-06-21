@@ -1,0 +1,13 @@
+{
+  "name": "izzypsonn-wiki",
+  "version": "1.0.0",
+  "description": "Personal Wikipedia-style website",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js && node -e \"console.log('\\nBuild complete! Serve the dist/ folder to view locally.')\""
+  },
+  "dependencies": {
+    "wikiparser-node": "^1.44.0"
+  },
+  "devDependencies": {}
+}

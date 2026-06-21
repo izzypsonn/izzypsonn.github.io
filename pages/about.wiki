@@ -1,0 +1,22 @@
+= About Me =
+
+Hi! I'm Izzy Sonnabend.
+
+== Background ==
+* Interested in technology, knowledge systems, and web development
+* Building personal projects to explore new ideas
+* Passionate about creating tools that make information accessible
+
+== Skills ==
+* Web Development (HTML, CSS, JavaScript)
+* Static Site Generation
+* MediaWiki Markup and Wikipedia
+
+== Interests ==
+* Knowledge management
+* Personal wikis
+* Open source tools
+* Information architecture
+
+This wiki is an experiment in building a personal knowledge base and portfolio in the style of Wikipedia.
+
