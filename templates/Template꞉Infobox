@@ -1,0 +1,47 @@
+{| class="infobox" style="float: right; clear: right; width: 22em; border: 1px solid #a2a9b1; background-color: #f8f9fa; color: #202122; margin: 0.5em 0 1em 1em; padding: 0.2em; font-size: 88%; line-height: 1.5em; text-align: left; border-collapse: collapse;"
+
+! colspan="2" style="font-size: 125%; font-weight: bold; text-align: center; padding: 0.2em 0.4em; background-color: #ced4da;" | {{{title|{{PAGENAME}}}}}
+
+|-
+{{#if:{{{image|}}}|
+
+| colspan="2" style="text-align: center; padding: 0.2em 0.4em;" | {{{image}}} {{#if:{{{caption|}}}|<br /><div style="font-size: 90%; padding-top: 0.2em;">{{{caption}}}</div>}}
+}}
+
+|-
+{{#if:{{{header1|}}}|
+! colspan="2" style="text-align: center; background-color: #eaecf0; font-weight: bold; padding: 0.1em 0.4em;" | {{{header1}}}
+}}
+
+|-
+{{#if:{{{data1|}}}|
+{{#if:{{{label1|}}}|! style="width: 40%; text-align: left; vertical-align: top; padding: 0.1em 0.4em; font-weight: bold;" {{!}} {{{label1}}}}}
+
+| style="vertical-align: top; padding: 0.1em 0.4em;" {{#if:{{{label1|}}}||colspan="2" style="text-align: center;"}} {{!}} {{{data1}}}
+}}
+
+|-
+{{#if:{{{header2|}}}|
+! colspan="2" style="text-align: center; background-color: #eaecf0; font-weight: bold; padding: 0.1em 0.4em;" | {{{header2}}}
+}}
+
+|-
+{{#if:{{{data2|}}}|
+{{#if:{{{label2|}}}|! style="width: 40%; text-align: left; vertical-align: top; padding: 0.1em 0.4em; font-weight: bold;" {{!}} {{{label2}}}}}
+
+| style="vertical-align: top; padding: 0.1em 0.4em;" {{#if:{{{label2|}}}||colspan="2" style="text-align: center;"}} {{!}} {{{data2}}}
+}}
+
+|-
+{{#if:{{{header3|}}}|
+! colspan="2" style="text-align: center; background-color: #eaecf0; font-weight: bold; padding: 0.1em 0.4em;" | {{{header3}}}
+}}
+
+|-
+{{#if:{{{data3|}}}|
+{{#if:{{{label3|}}}|! style="width: 40%; text-align: left; vertical-align: top; padding: 0.1em 0.4em; font-weight: bold;" {{!}} {{{label3}}}}}
+
+| style="vertical-align: top; padding: 0.1em 0.4em;" {{#if:{{{label3|}}}||colspan="2" style="text-align: center;"}} {{!}} {{{data3}}}
+}}
+
+|}

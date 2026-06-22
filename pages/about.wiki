@@ -1,4 +1,4 @@
-= About Me =
+{{PAGETITLE|About}}
 
 Hi! I'm Izzy Sonnabend.
 

@@ -1,4 +1,4 @@
-= Projects =
+{{PAGETITLE|Projects}}
 
 A collection of personal projects and explorations.
 
