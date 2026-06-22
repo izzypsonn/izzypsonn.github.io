@@ -7,6 +7,7 @@ const Parser = require('wikiparser-node');
 const PAGES_DIR = path.join(__dirname, 'pages');
 const DIST_DIR = path.join(__dirname, 'dist');
 const TEMPLATE_FILE = path.join(__dirname, 'template.html');
+const STYLE_SOURCE = path.join(__dirname, 'style.css');
 const TEMPLATES_DIR = path.join(__dirname, 'templates');
 
 // Ensure dist directory exists
@@ -155,6 +156,13 @@ if (fs.existsSync(INDEX_SOURCE)) {
 
   fs.writeFileSync(path.join(DIST_DIR, 'index.html'), indexHtml);
   console.log('✓ Generated index.html (fallback list)');
+}
+
+if (fs.existsSync(STYLE_SOURCE)) {
+  fs.copyFileSync(STYLE_SOURCE, path.join(DIST_DIR, 'style.css'));
+  console.log('✓ Copied style.css to dist/');
+} else {
+  console.warn('style.css not found in project root; skipping CSS copy.');
 }
 
 console.log(`\nBuild complete! ${wikiFiles.length} pages created in dist/`);
