@@ -680,6 +680,27 @@ figure[typeof~="mw:File/Frame"] > figcaption {
     margin: 0 auto !important;
     float: none !important;
   }
+  #content,
+  .mw-body,
+  #mw-data-after-content,
+  #mw-head-base,
+  #left-navigation,
+  .mw-footer {
+    margin-left: 1em !important;
+  }
+  #mw-head-base {
+    margin-left: 0 !important;
+  }
+  #left-navigation {
+    margin-left: 1em !important;
+    margin-top: 2.5em !important;
+    margin-bottom: -2.5em !important;
+  }
+  #mw-panel {
+    position: static !important;
+    width: auto !important;
+    left: 0 !important;
+  }
 }
 figure[typeof~="mw:File/Frame"] > figcaption:empty {
   padding-bottom: 0;
