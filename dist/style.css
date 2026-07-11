@@ -3490,7 +3490,7 @@ li.autoconfirmed-show {
   width: 75%;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 639px) {
   .theatre-resume-wrapper table {
     width: 100%;
   }
