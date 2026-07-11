@@ -1,0 +1,35 @@
+<includeonly>{| class="infobox" style="width: 22em; text-align: left; font-size: 88%; line-height: 1.5em; border-spacing: 3px;"
+
+|+ style="font-size: 125%; font-weight: bold; padding-bottom: 0.2em;" | {{{name|{{PAGENAME}}}}}
+
+{{#if:{{{image|}}}|
+{{!}}-
+{{!}} colspan="2" style="text-align:center; padding: 0.2em 0 0.6em 0;" {{!}} [[File:{{{image}}}|220px|alt={{{image_alt|}}}]]<br /><span style="font-size: 90%; font-style: italic;">{{{caption|}}}</span>
+}}
+{{#if:{{{part|}}}|
+{{!}}-
+! scope="row" style="padding-top: 0.1em; vertical-align: top; text-align: left; width: 40%; font-weight: bold;" {{!}} Vocal Part
+{{!}} {{{part}}}
+}}
+{{#if:{{{height|}}}|
+{{!}}-
+! scope="row" style="padding-top: 0.1em; vertical-align: top; text-align: left; width: 40%; font-weight: bold;" {{!}} Height
+{{!}} {{{height}}}
+}}
+{{#if:{{{eyes|}}}|
+{{!}}-
+! scope="row" style="padding-top: 0.1em; vertical-align: top; text-align: left; width: 40%; font-weight: bold;" {{!}} Eyes
+{{!}} {{{eyes}}}
+}}
+{{#if:{{{hair|}}}|
+{{!}}-
+! scope="row" style="padding-top: 0.1em; vertical-align: top; text-align: left; width: 40%; font-weight: bold;" {{!}} Hair
+{{!}} {{{hair}}}
+}}
+{{#if:{{{contact|}}}|
+{{!}}-
+! scope="row" style="padding-top: 0.1em; vertical-align: top; text-align: left; width: 40%; font-weight: bold;" {{!}} Contact
+{{!}} {{{contact}}}
+}}
+
+|}</includeonly>

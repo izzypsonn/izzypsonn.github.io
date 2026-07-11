@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "*.wiki": "markdown"
+  },
+  "[markdown]": {
+    "editor.wordWrap": "on"
+  }
+}

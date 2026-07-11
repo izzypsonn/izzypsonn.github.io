@@ -6,6 +6,9 @@
     "build": "node build.js",
     "dev": "node build.js && node -e \"console.log('\\nBuild complete! Serve the dist/ folder to view locally.')\""
   },
+  "wikiConfig": {
+    "redirectLanding": "/wiki/Izzy_Sonnabend.html"
+  },
   "dependencies": {
     "wikiparser-node": "^1.44.0"
   },

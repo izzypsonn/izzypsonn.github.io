@@ -1,0 +1,8 @@
+{{PAGETITLE|Izzy Sonnabend}}
+{{About|the New York-based Actor/Singer|Izzy Porter}}
+
+{{Infobox_Main
+| image = headshot professional.jpg
+| caption = Sonnabend in 2026
+}}
+'''Izzy Sonnabend''' is a Connecticut-based ice hockey analyst and MS Analytics student attending [[w:Georgia Tech]].
