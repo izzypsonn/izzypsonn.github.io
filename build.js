@@ -120,6 +120,14 @@ wikiFiles.forEach(file => {
     wikiContent = wikiContent.slice(ptMatch[0].length);
   }
   const pageName = path.basename(file, '.wiki');
+  
+  // page zone specifies whether it is a theatre page or an analytics page
+  const pageZoneRe = /\s*\{\{\s*Z(?:\s*\|([^}]*))?\s*\}\}\s*(?:\r?\n)?/i;
+  const zoneMatch = wikiContent.match(pageZoneRe);
+  const pageZone = zoneMatch ? zoneMatch[1] : 'a';
+  wikiContent = wikiContent.replace(pageZoneRe, ''); // Remove the Z template from content
+  
+
 
   // Parse MediaWiki markup with the page name so local templates can resolve correctly
   const ast = Parser.parse(wikiContent, pageName);
@@ -133,14 +141,19 @@ wikiFiles.forEach(file => {
   }
 
   const pageHeading = renderPageHeading(title);
-  const navHomeSelected = pageName === 'Izzy_Sonnabend' ? ' selected' : '';
+  const navHomeSelected = (pageName === 'Izzy_Sonnabend' || pageName === 'Izzy_Porter') ? ' selected' : '';
+  const navHomeLink = pageZone === 'a' ? './Izzy_Sonnabend.html' : './Izzy_Porter.html';
 
   // Generate page HTML with wiki paths
   let pageHtml = template
     .replace('{{TITLE}}', title)
     .replace('{{PAGE_HEADING}}', pageHeading)
     .replace('{{CONTENT}}', html)
-    .replace('{{NAV_HOME_SELECTED}}', navHomeSelected);
+    .replace('{{NAV_HOME_SELECTED}}', navHomeSelected)
+    .replace('{{NAV_HOME_LINK}}', navHomeLink)
+    .replace('{{NAV_MEDIA_SELECTED}}', pageName === 'Media' ? ' selected' : '')
+    .replace('{{ZONE_T}}', pageZone === 't' ? 'inline' : 'none')
+    .replace('{{ZONE_A}}', pageZone === 'a' ? 'inline' : 'none');
   
   // Process interwiki links
   pageHtml = processInterwikiLinks(pageHtml);

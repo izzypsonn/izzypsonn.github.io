@@ -1,5 +1,5 @@
-{{PAGETITLE|Izzy Sonnabend}}
-{{About|the New York-based Actor/Singer|Izzy Porter}}
+{{PAGETITLE|Izzy Sonnabend}}{{Z|a}}
+{{About|the New York-based actor and singer|Izzy Porter}}
 
 {{Infobox_Main
 | image = headshot professional.jpg
