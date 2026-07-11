@@ -11,52 +11,52 @@
 '''Izzy Porter''' is a New York-based non-Equity actor and singer.
 
 == Theatre ==
-<div style="overflow-x: auto; white-space: nowrap; width: 75%;">
-{| style="border: none; background: transparent; border-collapse: collapse; width: 100%;"
+<div class="theatre-resume-wrapper" style="overflow-x: auto; white-space: nowrap;">
+{| style="border: none; background: transparent; border-collapse: separate; width: 100%; border-spacing: 20px 0px; margin-left: -20px;"
 
-|- style="padding: 4px 25px;"
+|-
 | ''[[w:Assassins (musical)|Assassins]]''
 | Balladeer/[[w:Lee Harvey Oswald|Oswald]]
 | [[w:Brookfield Theatre]]
 | ''dir. Orán Matheson''
 
-|- style="padding: 4px 25px;"
+|-
 | ''[[w:Jesus Christ Superstar]]''
 | Priest/Ensemble/Fight Captain
 | Downtown Cabaret Theatre
 | ''dir. Bradford Blake''
 
-|- style="padding: 4px 25px;"
+|-
 | ''[[w:The Little Mermaid (musical)|The Little Mermaid]]''
 | Jetsam
 | Musicals at Richter
 | ''dir. David Halliwell''
 
-|- style="padding: 4px 25px;"
+|-
 | ''[[w:Into the Woods]]''
 | [[w:Jack and the Beanstalk|Jack]]
 | Wilton Playshop
 | ''dir. Skip Ploss''
 
-|- style="padding: 4px 25px;"
+|-
 | ''[[w:The 25th Annual Putnam County Spelling Bee|25th Annual...Spelling Bee]]''
 | Leaf Coneybear
 | Brewster Theatre Company
 | ''dir. Judy Brewster''
 
-|- style="padding: 4px 25px;"
+|-
 | ''[[w:Sweeney Todd: The Demon Barber of Fleet Street|Sweeney Todd]]''
 | [[w:Tobias Ragg]]
 | Downtown Cabaret Theatre
 | ''dir. Bradford Blake''
 
-|- style="padding: 4px 25px;"
+|-
 | ''[[w:Rent (musical)|RENT]]''
 | Roger Davis
 | Center Stage Theatre
 | ''dir. Liz Muller''
 
-|- style="padding: 4px 25px;"
+|-
 | ''Three Piggy Opera''
 | Narrator 1, u/s Narrator 4
 | Doris L. Cohen Elementary

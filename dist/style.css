@@ -3485,3 +3485,13 @@ li.autoconfirmed-show {
 .unconfirmed-show {
   display: none !important;
 }
+
+.theatre-resume-wrapper table {
+  width: 75%;
+}
+
+@media only screen and (max-width: 767px) {
+  .theatre-resume-wrapper table {
+    width: 100%;
+  }
+}
