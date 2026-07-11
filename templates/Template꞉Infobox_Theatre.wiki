@@ -8,7 +8,7 @@
 }}
 {{#if:{{{part|}}}|
 {{!}}-
-! scope="row" style="padding-top: 0.1em; vertical-align: top; text-align: left; width: 40%; font-weight: bold;" {{!}} Vocal Part
+! scope="row" style="padding-top: 0.1em; vertical-align: top; text-align: left; width: 40%; font-weight: bold;" {{!}} Voice
 {{!}} {{{part}}}
 }}
 {{#if:{{{height|}}}|
