@@ -1,0 +1,28 @@
+{{PAGETITLE|Portfolio}}{{Z|a}}
+
+== PWHL xG Visualizations ==
+{{Imagebox|image=sirens_2526.png|size=400px}}
+Three shotmap visualizations for each [[w:Professional Women's Hockey League]] team from the [[w:2025–26 PWHL season]], written in Python using xgboost and matplotlib alongside data sourced from the league's play-by-play API.
+
+The PWHL does not provide line change data or penalty expiration data. In order to determine how many players were on the ice for an event, it is necessary to calculate the game state from the penalties taken and the timestamps of the events. This works for most events, however in certain cases the league did not record goalies being pulled, so certain shots that were taken at 6v5 are misrecorded as being at 5v5.
+
+The expected goals model is a gradient boosting logistic. Following the methodology of TopDownHockey,<ref>https://hockeystats.com/methodology/expected-goals</ref> the cross-validation is double-nested and calibration within 3% is attempted.<ref>Calibration is defined as the difference between the sum of the expected goals of all shots and the number of goals scored, as a percentage of the number of goals scored.</ref> Due to the small size of the league and the relatively short seasons, the calibration is across the three seasons rather than for each individually. The current version of the model has an area under curve of 0.722 and a calibration of +0.1%. It takes the following inputs:
+* Shot x coordinate (normalized to one half of the ice for data consistency reasons)
+* Shot y coordinate (normalized to one side of the net)
+* Shot distance to net
+* Shot angle from net
+* Whether the shot was behind the net
+* The type of shot as recorded by the API
+* Whether the shooter was shooting from their off hand
+* Whether the shot was taken from the goalie's glove side
+* The type of event preceding the shot
+* The distance from the preceding event
+* The time from the previous event
+* The speed from the previous event
+* Whether the puck crossed y=0 from the previous event
+* Whether the home team was shooting
+* The period in which the shot was taken
+* Whether the game state was a power play, a penalty kill, or even strength
+* The remaining time in the game
+
+The first two visualizations show a team's expected goals for and against rates relative to league average at 5v5 and in special teams situations. The third shows a team's save percentage and shooting percentage relative to expected at 5v5. Due to the short-seasoned nature of the league, the save percentage chart is limited to the starting goalie. In all three charts, more is better on offense (right) and less is better on defense (left).

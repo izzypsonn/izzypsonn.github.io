@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.echo.styles.badge%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Coojs-ui.styles.icons-alerts%7Cskins.vector.styles.legacy%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"
+    />
+    <link
+      rel="stylesheet"
+      href="/w/load.php?lang=en&amp;modules=ext.gadget.SubtleUpdatemarker%2CTwinkle-pagestyles&amp;only=styles&amp;skin=vector"
+    />
+    <link
+      rel="stylesheet"
+      href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"
+    />
+    <link
+      rel="stylesheet"
+      href="/w/load.php?lang=en&amp;modules=user.styles&amp;only=styles&amp;skin=vector&amp;user=Wheatzilopochtli&amp;version=u84mj"
+    />
+  </head>
+  <body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt">
+    <div id="mw-page-base" class="noprint"></div>
+    <div id="mw-head-base" class="noprint"></div>
+
+    <div id="content" class="mw-body" role="main">
+      <a id="top"></a>
+      <h1 id="firstHeading" class="firstHeading mw-first-heading"><span class="mw-page-title-main">Portfolio</span></h1>
+      <div id="bodyContent" class="vector-body">
+        <div class="mw-content-ltr mw-parser-output"><div class="mw-heading mw-heading2"><h2 id="PWHL_xG_Visualizations">PWHL xG Visualizations</h2></div>
+<table class="infobox" style="width: 30em; text-align: left; font-size: 88%; line-height: 1.5em; border-spacing: 3px;">
+<tbody>
+<caption style="font-size: 125%; font-weight: bold; padding-bottom: 0.2em;">
+</caption><tr>
+<td colspan="2" style="text-align:center; padding: 0.2em 0 0.6em 0;"><span><img alt="" src="../media/sirens_2526.png?width=400" decoding="async" width="400" class="mw-file-element"></span><br><span style="font-size: 90%; font-style: italic;"></span>
+</td></tr></tbody></table>
+<p>Three shotmap visualizations for each <a href="https://en.wikipedia.org/wiki/Professional_Women's_Hockey_League" title="Professional Women's Hockey League">Professional Women's Hockey League</a> team from the <a href="https://en.wikipedia.org/wiki/2025–26_PWHL_season" title="2025–26 PWHL season">2025–26 PWHL season</a>, written in Python using xgboost and matplotlib alongside data sourced from the league's play-by-play API.
+</p><p>The PWHL does not provide line change data or penalty expiration data. In order to determine how many players were on the ice for an event, it is necessary to calculate the game state from the penalties taken and the timestamps of the events. This works for most events, however in certain cases the league did not record goalies being pulled, so certain shots that were taken at 6v5 are misrecorded as being at 5v5.
+</p><p>The expected goals model is a gradient boosting logistic. Following the methodology of TopDownHockey,<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">[</span>1<span class="cite-bracket">]</span></a></sup> the cross-validation is double-nested and calibration within 3% is attempted.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span class="cite-bracket">[</span>2<span class="cite-bracket">]</span></a></sup> Due to the small size of the league and the relatively short seasons, the calibration is across the three seasons rather than for each individually. The current version of the model has an area under curve of 0.722 and a calibration of +0.1%. It takes the following inputs:
+</p>
+<ul><li>Shot x coordinate (normalized to one half of the ice for data consistency reasons)</li>
+<li>Shot y coordinate (normalized to one side of the net)</li>
+<li>Shot distance to net</li>
+<li>Shot angle from net</li>
+<li>Whether the shot was behind the net</li>
+<li>The type of shot as recorded by the API</li>
+<li>Whether the shooter was shooting from their off hand</li>
+<li>Whether the shot was taken from the goalie's glove side</li>
+<li>The type of event preceding the shot</li>
+<li>The distance from the preceding event</li>
+<li>The time from the previous event</li>
+<li>The speed from the previous event</li>
+<li>Whether the puck crossed y=0 from the previous event</li>
+<li>Whether the home team was shooting</li>
+<li>The period in which the shot was taken</li>
+<li>Whether the game state was a power play, a penalty kill, or even strength</li>
+<li>The remaining time in the game</li></ul>
+<p>The first two visualizations show a team's expected goals for and against rates relative to league average at 5v5 and in special teams situations. The third shows a team's save percentage and shooting percentage relative to expected at 5v5. Due to the short-seasoned nature of the league, the save percentage chart is limited to the starting goalie. In all three charts, more is better on offense (right) and less is better on defense (left).
+</p>
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><a href="#cite_ref-1">↑</a></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://hockeystats.com/methodology/expected-goals">https://hockeystats.com/methodology/expected-goals</a></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><a href="#cite_ref-2">↑</a></span> <span class="reference-text">Calibration is defined as the difference between the sum of the expected goals of all shots and the number of goals scored, as a percentage of the number of goals scored.</span>
+</li>
+</ol></div></div>
+      </div>
+    </div>
+
+    <div id="mw-navigation">
+      <h2>Navigation menu</h2>
+      <div id="mw-head">
+        <div id="left-navigation">
+          <nav id="p-associated-pages" class="mw-portlet mw-portlet-associated-pages vector-menu-tabs vector-menu-tabs-legacy vector-menu" aria-labelledby="p-associated-pages-label">
+            <h3 id="p-associated-pages-label" class="vector-menu-heading ">
+              <span class="vector-menu-heading-label">associated-pages</span>
+            </h3>
+            <div class="vector-menu-content">
+              <ul class="vector-menu-content-list">
+                <li id="ca-homepage" class="vector-tab-noicon mw-list-item"><a href=./Izzy_Sonnabend.html><span>About</span></a></li>
+                <li id="ca-media" class="vector-tab-noicon mw-list-item" style="display: none"><a href="/wiki/Media.html"><span>Media</span></a></li>
+                <li id="ca-portfolio" class="vector-tab-noicon mw-list-item selected" style="display: inline"><a href="/wiki/Portfolio.html"><span>Portfolio</span></a></li>
+              </ul>
+            </div>
+          </nav>
+      </div>
+    </div>
+
+    <footer
+      style="
+        padding: 20px;
+        text-align: center;
+        border-top: 1px solid #ccc;
+        margin-top: 40px;
+        color: #666;
+      "
+    >
+      <small>DFTBA <3</small>
+    </footer>
+  </body>
+</html>

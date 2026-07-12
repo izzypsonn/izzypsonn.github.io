@@ -1,0 +1,9 @@
+<includeonly>{| class="infobox" style="width: 30em; text-align: left; font-size: 88%; line-height: 1.5em; border-spacing: 3px;"
+
+|+ style="font-size: 125%; font-weight: bold; padding-bottom: 0.2em;" |
+{{#if:{{{image|}}}|
+{{!}}-
+{{!}} colspan="2" style="text-align:center; padding: 0.2em 0 0.6em 0;" {{!}} [[File:{{{image}}}|{{#if: {{{size|}}} | {{{size}}} | 325px}}|alt={{{image_alt|}}}]]<br /><span style="font-size: 90%; font-style: italic;">{{{caption|}}}</span>
+}}
+
+|}</includeonly>

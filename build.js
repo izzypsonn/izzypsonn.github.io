@@ -53,8 +53,8 @@ function processInterwikiLinks(html) {
 
 function processFile(html) {
   const originalHtml = html;
-  html = html.replace(/<img[^>]*src="\/wiki\/Special%3ARedirect%2Ffile%2F([^\.]+)\.jpg/gi, (match, file) => {
-    const fileUrl = `../media/${file}.jpg`.toLowerCase();
+  html = html.replace(/<img[^>]*src="\/wiki\/Special%3ARedirect%2Ffile%2F(.+)\.([a-z]+)/gi, (match, file, extension) => {
+    const fileUrl = `../media/${file}.${extension}`.toLowerCase();
     return `<img alt="" src="${fileUrl}`;
   });
   html = html.replace(/<a[^>]*class="mw-file-description">(.*?)<\/a>/gi, (match, inside) => {
@@ -152,6 +152,7 @@ wikiFiles.forEach(file => {
     .replace('{{NAV_HOME_SELECTED}}', navHomeSelected)
     .replace('{{NAV_HOME_LINK}}', navHomeLink)
     .replace('{{NAV_MEDIA_SELECTED}}', pageName === 'Media' ? ' selected' : '')
+    .replace('{{NAV_PORTFOLIO_SELECTED}}', pageName === 'Portfolio' ? ' selected' : '')
     .replace('{{ZONE_T}}', pageZone === 't' ? 'inline' : 'none')
     .replace('{{ZONE_A}}', pageZone === 'a' ? 'inline' : 'none');
   
