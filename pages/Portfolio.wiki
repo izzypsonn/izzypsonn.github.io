@@ -30,6 +30,6 @@ The first two visualizations show a team's expected goals for and against rates 
 {{Reflist}}
 
 == This website ==
-This website is a static site hosted through github pages editable with wikitext, the Wikipedia markdown language. It uses wikiparser-node alongside other scripts to convert wikitext files into html webpages and modify them to suit my needs. It is completely impractical for my purposes<ref>Even something as simple as displaying an image requires significant workarounds. For example, most wikipedia templates are incompatible with static pages and needed to be adapted from older versions or rewritten entirely.</ref> but it is an excellent demonstration of [[w:sunk cost fallacy]].
+This website is a static site hosted through github pages editable with wikitext, the Wikipedia markdown language. It uses wikiparser-node alongside other scripts to convert wikitext files into html webpages and modify them to suit my needs. It is completely impractical for my purposes<ref>Even something as simple as displaying an image requires significant workarounds. Most wikipedia templates are incompatible with static pages and needed to be adapted from older versions or rewritten entirely.</ref> but it is an excellent demonstration of [[w:sunk cost fallacy]].
 
 {{Reflist}}
