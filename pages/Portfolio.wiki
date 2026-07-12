@@ -25,11 +25,11 @@ The expected goals model is a gradient boosting logistic. Following the methodol
 * Whether the game state was a power play, a penalty kill, or even strength
 * The remaining time in the game
 
-The first two visualizations show a team's expected goals for and against rates relative to league average at 5v5 and in special teams situations. The third shows a team's save percentage and shooting percentage relative to expected at 5v5. Due to the short-seasoned nature of the league, the save percentage chart is limited to the starting goalie. In all three charts, more is better on offense (right) and less is better on defense (left).
+The first two visualizations show a team's expected goals for and against rates relative to league average at 5v5 and in special teams situations. The third shows a team's save percentage and shooting percentage relative to expected at 5v5. The save percentage chart is limited to the starting goalie, defined as the goalie that played the most games. In all three charts, more is better on offense (right) and less is better on defense (left).
 
 {{Reflist}}
 
 == This website ==
-This website is a static site hosted through github pages editable with wikitext, the Wikipedia markdown language. It uses wikiparser-node alongside other scripts to convert wikitext files into html webpages and modify them to suit my needs. It is completely impractical for my purposes<ref>Even something as simple as displaying an image requires significant workarounds. Most wikipedia templates are incompatible with static pages and needed to be adapted from older versions or rewritten entirely.</ref> but it is an excellent demonstration of [[w:sunk cost fallacy]].
+This website is a static site hosted through github pages editable with wikitext, the Wikipedia markdown language. It uses wikiparser-node alongside other scripts to convert wikitext files into html webpages and modify them to suit my needs. It is completely impractical for my purposes<ref>Even something as simple as displaying an image requires significant workarounds. Most Wikipedia templates are incompatible with static pages and needed to be adapted from older versions or rewritten entirely.</ref> but it is an excellent demonstration of [[w:sunk cost fallacy]].
 
 {{Reflist}}
