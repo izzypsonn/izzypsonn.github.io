@@ -4,5 +4,7 @@
 {{Infobox_Main
 | image = headshot professional.jpg
 | caption = Sonnabend in 2026
+| education = [[w:Clark University]] ([[w:Bachelor of Arts|BA]])<br>[[w:Georgia Tech]] ([[w:Master of Science|MS]])
+| linkedin = https://www.linkedin.com/in/izzy-sonnabend-676ba3358/
 }}
 '''Izzy Sonnabend''' is a Connecticut-based ice hockey analyst and MS Analytics student attending [[w:Georgia Tech]].

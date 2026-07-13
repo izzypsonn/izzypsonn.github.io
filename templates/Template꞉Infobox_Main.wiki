@@ -7,4 +7,16 @@
 {{!}} colspan="2" style="text-align:center; padding: 0.2em 0 0.6em 0;" {{!}} [[File:{{{image}}}|220px|alt={{{image_alt|}}}]]<br /><span style="font-size: 90%; font-style: italic;">{{{caption|}}}</span>
 }}
 
+{{#if:{{{education|}}}|
+{{!}}-
+! scope="row" style="padding-top: 0.1em; vertical-align: top; text-align: left; width: 40%; font-weight: bold;" {{!}} Education
+{{!}} {{{education}}}
+}}
+
+{{#if:{{{linkedin|}}}|
+{{!}}-
+! scope="row" style="padding-top: 0.1em; vertical-align: top; text-align: left; width: 40%; font-weight: bold;" {{!}} LinkedIn
+{{!}} [{{{linkedin}}} link]
+}}
+
 |}</includeonly>
