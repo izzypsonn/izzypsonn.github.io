@@ -15,9 +15,15 @@
 {| style="border: none; background: transparent; border-collapse: separate; width: 100%; border-spacing: 20px 0px; margin-left: -20px;"
 
 |-
+| Dracula: A Feminist Revenge...<ref>Currently in production</ref>
+| [[w:Mina Harker]]
+| [[w:Brookfield Theatre]]
+| ''dir. Pippa Walton''
+
+|-
 | ''[[w:Assassins (musical)|Assassins]]''
 | Balladeer/[[w:Lee Harvey Oswald|Oswald]]
-| [[w:Brookfield Theatre]]
+| Brookfield Theatre
 | ''dir. Orán Matheson''
 
 |-
@@ -63,6 +69,7 @@
 | ''dir. Ms. B''
 |}
 </div>
+{{reflist}}
 
 == Training ==
 '''Clark University – BA Theatre Arts'''<br>
