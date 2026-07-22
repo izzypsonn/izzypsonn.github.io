@@ -11,6 +11,7 @@
 '''Izzy Porter''' is a New York-based non-Equity actor and singer.
 
 == Theatre ==
+
 <div class="theatre-resume-wrapper" style="overflow-x: auto; white-space: nowrap;">
 {| style="border: none; background: transparent; border-collapse: separate; width: 100%; border-spacing: 20px 0px; margin-left: -20px;"
 
@@ -24,7 +25,7 @@
 | ''[[w:Assassins (musical)|Assassins]]''
 | Balladeer/[[w:Lee Harvey Oswald|Oswald]]
 | Brookfield Theatre
-| ''dir. Orán Matheson''
+| ''dir. Òran Matheson''
 
 |-
 | ''[[w:Jesus Christ Superstar]]''
@@ -68,6 +69,7 @@
 | Doris L. Cohen Elementary
 | ''dir. Ms. B''
 |}
+
 </div>
 {{reflist}}
 
